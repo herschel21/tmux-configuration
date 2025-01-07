@@ -56,7 +56,7 @@ curl -L "$REPO_URL" -o "$ZIP_FILE"
 # Unzip and install configuration
 print_message "Installing configuration files..."
 unzip "$ZIP_FILE" -d "$DOWNLOAD_DIR"
-cp "$DOWNLOAD_DIR/tmux-config-main/.tmux.conf" "$CONFIG_FILE"
+cp "$DOWNLOAD_DIR/tmux-config-main/tmux.conf" "$CONFIG_FILE"
 
 # Install plugins
 print_message "Installing tmux plugins..."
