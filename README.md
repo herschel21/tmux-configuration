@@ -5,7 +5,7 @@
 You can install this tmux configuration easily with the following command:
 
 ```bash
-bash -c "$(wget https://raw.githubusercontent.com/yourusername/tmux-config/main/install.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/herschel21/tmux-config/main/install.sh -O -)"
 ```
 
 This command downloads and runs the installation script, which will:
@@ -20,7 +20,7 @@ This command downloads and runs the installation script, which will:
 To remove this tmux configuration and restore your backup:
 
 ```bash
-bash -c "$(wget https://raw.githubusercontent.com/yourusername/tmux-config/main/uninstall.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/herschel21/tmux-config/main/uninstall.sh -O -)"
 ```
 
 ## 🚀 Usage
