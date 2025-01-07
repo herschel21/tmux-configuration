@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO_URL="https://github.com/yourusername/tmux-config/archive/refs/heads/main.zip"
+REPO_URL="https://github.com/herschel21/tmux-configuration/archive/refs/heads/main.zip"
 DOWNLOAD_DIR="temp_files/"
 ZIP_FILE="$DOWNLOAD_DIR/main.zip"
 BACKUP_DIR="$HOME/tmux_backup"
@@ -63,8 +63,8 @@ print_message "Installing tmux plugins..."
 "$TPM_DIR/bin/install_plugins"
 
 # Clean up downloaded files
-print_message "Cleaning up..."
-rm -rf "$DOWNLOAD_DIR" "$ZIP_FILE"
+# print_message "Cleaning up..."
+# rm -rf "$DOWNLOAD_DIR" "$ZIP_FILE"
 
 print_message "Installation complete! Please restart tmux or run: tmux source $CONFIG_FILE"
 
