@@ -63,8 +63,8 @@ print_message "Installing tmux plugins..."
 "$TPM_DIR/bin/install_plugins"
 
 # Clean up downloaded files
-# print_message "Cleaning up..."
-# rm -rf "$DOWNLOAD_DIR" "$ZIP_FILE"
+print_message "Cleaning up..."
+rm -rf "$DOWNLOAD_DIR" "$ZIP_FILE"
 
 print_message "Installation complete! Please restart tmux or run: tmux source $CONFIG_FILE"
 
