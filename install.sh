@@ -5,6 +5,7 @@ DOWNLOAD_DIR="temp_files/"
 ZIP_FILE="$DOWNLOAD_DIR/main.zip"
 BACKUP_DIR="$HOME/tmux_backup"
 CONFIG_FILE="$HOME/.tmux.conf"
+LOCAL_FILE="$HOME/.tmux.conf.local"
 TPM_DIR="$HOME/.tmux/plugins/tpm"
 
 # Print colorful messages
@@ -57,6 +58,7 @@ curl -L "$REPO_URL" -o "$ZIP_FILE"
 print_message "Installing configuration files..."
 unzip "$ZIP_FILE" -d "$DOWNLOAD_DIR"
 cp "$DOWNLOAD_DIR/tmux-configuration-main/tmux.conf" "$CONFIG_FILE"
+cp "$DOWNLOAD_DIR/tmux-configuration-main/tmux.conf.local" "$LOCAL_FILE"
 
 # Install plugins
 print_message "Installing tmux plugins..."

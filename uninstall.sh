@@ -9,6 +9,7 @@ if [ -f ~/.tmux.conf.backup ]; then
 else
     echo "Removing tmux configuration..."
     rm -f ~/.tmux.conf
+    rm -f ~/.tmux.conf.local
 fi
 
 # Remove TPM and plugins
