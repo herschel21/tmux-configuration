@@ -1,8 +1,8 @@
 #!/bin/bash
 
-REPO_URL="https://github.com/herschel21/tmux-configuration/archive/refs/heads/main.zip"
+REPO_URL="https://github.com/herschel21/tmux-configuration/archive/refs/heads/release-1.0.zip"
 DOWNLOAD_DIR="temp_files/"
-ZIP_FILE="$DOWNLOAD_DIR/main.zip"
+ZIP_FILE="$DOWNLOAD_DIR/release-1.0.zip"
 BACKUP_DIR="$HOME/tmux_backup"
 CONFIG_FILE="$HOME/.tmux.conf"
 LOCAL_FILE="$HOME/.tmux.conf.local"
@@ -57,8 +57,8 @@ curl -L "$REPO_URL" -o "$ZIP_FILE"
 # Unzip and install configuration
 print_message "Installing configuration files..."
 unzip "$ZIP_FILE" -d "$DOWNLOAD_DIR"
-cp "$DOWNLOAD_DIR/tmux-configuration-main/tmux.conf" "$CONFIG_FILE"
-cp "$DOWNLOAD_DIR/tmux-configuration-main/tmux.conf.local" "$LOCAL_FILE"
+cp "$DOWNLOAD_DIR/tmux-configuration-release-1.0/tmux.conf" "$CONFIG_FILE"
+cp "$DOWNLOAD_DIR/tmux-configuration-release-1.0/tmux.conf.local" "$LOCAL_FILE"
 
 # Install plugins
 print_message "Installing tmux plugins..."
